@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+    <ul class="navbar-nav">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+            <li class="nav-item align-middle" style="position: relative; top: 5px;">
+                <button class="btn btn-outline-dark fa fa-adjust" onclick="myFunction()"></button>
+            </li>
+
+            <div class="nav-link">
+                <div class="custom-control custom-switch">
+                    <input onclick="myFunction()" type="checkbox" class="custom-control-input" id="darkSwitch">
+                    <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                </div>
+            </div>
+        }
+    </ul>

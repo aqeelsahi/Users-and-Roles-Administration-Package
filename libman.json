@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "font-awesome@5.13.1",
+      "destination": "wwwroot/font-awesome/"
+    },
+    {
+      "library": "bootstrap-toggle@2.2.2",
+      "destination": "wwwroot/lib/bootstrap-toggle/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+﻿@model List<DESI8N.com.Models.UserInRole>
+
+@{
+    ViewData["Title"] = "Edite Users In Role";
+    var roleId = ViewBag.roleId;
+}
+
+<h1>Edite Users In Role</h1>
+<hr />
+
+<form method="post">
+    <div class="card">
+        <div class="card-header">
+            <h5>Add or remove users from this role.</h5>
+        </div>
+        <div class="card-body">
+           @for (int i=0;i<Model.Count;i++)
+           {
+            <div class="form-check m-1">
+                <input type="hidden" asp-for="@Model[i].UserId" />
+                <input type="hidden" asp-for="@Model[i].UserName" />
+                <input asp-for="@Model[i].IsSelected" class="form-check-input" />
+                <label class="form-check-label" asp-for="@Model[i].IsSelected">
+                    @Model[i].UserName
+                </label>
+            </div>
+           }
+        </div>
+        <div class="card-footer">
+            <input type="submit" value="Update" class="btn btn-warning" style="width:auto"/>
+            <a asp-action="EditRole" asp-route-id="@roleId" class="btn btn-primary" style="width:auto">Cancel</a>
+        </div>
+    </div>
+</form>
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

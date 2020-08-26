@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Not Found";
+}
+
+<h1 class="text-danger">@ViewBag.ErrorMessage</h1>
+<hr />
+<p>
+    <strong>Original Path:</strong> <code>@ViewBag.Path</code>
+</p>
+
+<p>
+    <strong>Original Query:</strong> <code>@ViewBag.QS</code>
+</p>
+
+<hr />
+<a class="btn btn-outline-primary" asp-action="index" asp-controller="home">
+    Click here to navigate to the home page
+</a>
+

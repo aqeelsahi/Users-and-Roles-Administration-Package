@@ -1,0 +1,21 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+
+<form method="post" class="mt-3">
+    <div class="card text-center">
+        <div class="card-header">
+            <h1 class="text-danger">@ViewData["Title"]</h1>
+        </div>
+        <div class="card-body">
+            <img src="~/images/noAccess.svg" class="img-fluid" style="height: auto" />
+            
+        </div>
+        <div class="card-footer">
+            <p class="text-danger">You do not have access to this resource.</p>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,28 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+@if (ViewBag.ErrorTitle == null)
+{
+    <h1 class="text-danger">Error:</h1>
+    <h6 class="text-danger">An error occurred while processing your request. The support team is notified and we are working on the fix.</h6>
+    <code>Please contact us on admin@DESI8N.com OR navigate back to the home page from </code>
+
+    <a asp-action="index" asp-controller="home">
+        here.
+    </a>
+    <hr />
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+    <code>Please contact us on admin@DESI8N.com OR navigate back to the home page from 
+        <a class="text-danger" asp-action="index" asp-controller="home">
+             here.
+        </a>
+    </code>
+    
+}
+
