@@ -1,6 +1,6 @@
 # AQEELSAHI.com
 
-## This is a simple Administration Package. [(Live demo)](https://aqeelsahiaspnetcoreadmin.azurewebsites.net/)
+## This is a simple ASP.Net Core administration package, which can be used to manage users accounts, roles, and claims. [(Live demo)](https://aqeelsahiaspnetcoreadmin.azurewebsites.net/)
 
 > To be able to access the admin panel, use the following email as username and password "admin1@AQEELSAHI.com".
 
