@@ -1,6 +1,7 @@
 # AQEELSAHI.com
 
 ## This is a simple Administration Package.
+## Live [demo](https://aqeelsahiaspnetcoreadmin.azurewebsites.net/)
 
 > To be able to access the admin panel, use the following email as username and password "admin1@AQEELSAHI.com".
 
@@ -26,5 +27,3 @@ The following features are provided within this package:
 18. Show hide view items according to user claims.
 19. Account lockout for 15 minutes after 5 login attempts.
 20. Finally, everything is bootstrap responsive.
-
-Live [demo](https://aqeelsahiaspnetcoreadmin.azurewebsites.net/)
