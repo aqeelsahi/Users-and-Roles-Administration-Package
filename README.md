@@ -19,7 +19,7 @@ The following features are provided within this package:
 11. Get list of users.
 12. User email confirmation.
 13. Create, edit, delete users.
-14. Show hode navigation menu based on user role.
+14. Show hide navigation menu based on user role.
 15. Manage users roles.
 16. Manage users claims.
 17. Role and claim authorization.
