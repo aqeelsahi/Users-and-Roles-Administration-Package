@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace DESI8N.com.Controllers
 {
-    [Authorize(Policy = "AdminRolePolicy")]
+   [Authorize(Policy = "AdminRolePolicy")]
     public class AdminController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
